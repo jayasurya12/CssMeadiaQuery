@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.grid-container{
+    display: grid;
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: auto auto auto;
+    /* background-color: hotpink; */
+}
+.main{
+    box-shadow: 4px 3px 10px rgb(180, 212, 212);
+}
+img{
+    width: 400px;
+    height: 250px;
+}
+.bodyContainer{
+    font-size: xx-large;
+    font-weight: 700;
+    opacity: 0.9;
+}
+.space{
+    padding: 10px;
+}
+button{
+    background-color: rgb(56, 201, 56);
+    padding: 10px;
+    color: #fff;
+    opacity: 0.9;
+    font-size: medium;
+    border-radius: 2px;
+    border: none;
+}
+
+@media(max-width: 240px){
+    .grid-container{
+        grid-template-columns: auto;
+    }
+    .bodyContainer{
+        font-size: large;
+        font-weight: 700;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    button{
+        position: relative;
+        left: 13rem;
+        top: -10px;
+    }
+    .price{
+        position: relative;
+        top: -10px;
+        left: 20px;
+        font-size: medium;
+        font-weight: 600;
+    }
+}
+@media(max-width:340px){
+    .grid-container{
+        grid-template-columns: auto;
+    }
+    p{
+        font-size: large;
+        text-align: center;
+    }
+    button{
+        padding: 15px;
+        position: relative;
+        left:12rem;
+        top: -13px;
+}
+    .price{
+        position: relative;
+        top: -11px;
+        left: 20px;
+        font-size:large;
+        font-weight: 600;
+    }
+    .bodyContainer{
+        font-size: x-large;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+@media(max-width:520px){
+    .grid-container{
+        grid-template-columns: auto;
+    }
+    button{
+        padding: 15px;
+        position: relative;
+        left: 14rem;
+        top: -8px;
+        
+    }
+    .price{
+        position: relative;
+        left: 40px;
+        top: -10px;
+        font-size: large;
+        font-weight: 600;
+    }
+    img{
+        width: 470px;
+        height: 300px;
+    }
+    .bodyContainer{
+        font-size: x-large;
+        font-weight: 600;
+        text-align: center;
+        margin: 5px 0 10px 0;
+    }
+    p{
+        text-align: center;
+        width: 98%;
+    }
+
+}
+@media(min-width:520px){
+    .grid-container{
+        grid-template-columns: auto auto;
+    }
+    button{
+        position: relative;
+        left: 13rem;
+        top: -10px;
+    }
+    .price{
+        position: relative;
+        top: -9px;
+        font-size: large;
+        font-weight: 600;
+    }
+}
+@media(min-width:880px){
+    p{
+        text-align: center;
+        width: 97%;
+    }
+    .bodyContainer{
+        font-size: x-large;
+    }
+    button{
+        font-size: large;
+    }
+    img{
+        width: 420px;
+    }
+    .bodyContainer{
+        position: relative;
+        left: 20px;
+    }
+    .price{
+        position: relative;
+        left: 20px;
+    }
+}
+@media(min-width: 960px){
+    img{
+        width: 460px;
+        height: 300px;
+    }
+    .bodyContainer{
+        position: relative;
+        left: 20px;
+    }
+    .price{
+        position: relative;
+        left: 20px;
+    }
+    button{
+        position: relative;
+        left: 16rem;
+    }
+}
+@media(min-width:1080px){
+    .grid-container{
+        grid-template-columns: auto auto auto;
+    }
+    p{
+        width: 97%;
+    }
+    .bodyContainer{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: xx-large;
+    }
+    .price{
+        position: relative;
+        left: 50px;
+    }
+}
+@media(min-width: 1180px){
+    p{
+        font-size: large;
+    }
+}
+@media(min-width:1280px){
+    .bodyContainer{
+        font-size: xx-large;
+        letter-spacing: 2.5px;
+    }
+    p{
+        font-size: x-large;
+    }
+    .price{
+        font-size: x-large;
+        opacity: 0.9;
+    }
+    button{
+        font-size: x-large;
+        position: relative;
+        left: 12rem;
+    }
+}
+@media(min-width:1600px){
+    .grid-container{
+        grid-template-columns: auto auto auto auto;
+    }
+    img{
+        opacity: 0.9;
+    }
+    button{
+        opacity: 1;
+    }
+    button:hover{
+        transition: 0.4s;
+        opacity: 0.7;
+    }
+}
